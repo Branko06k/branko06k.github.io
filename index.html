@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JB CONSULTING AGENCY DOO</title>
+<style>
+    body {
+        margin: 0;
+        font-family: "Georgia", serif;
+        font-size: 22px;
+        color: #222;
+        line-height: 1.6;
+    }
+   header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0,0,0,0.75);
+    color: #fff;
+    padding: 15px 20px; /* меньше паддинги */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 999;
+}
+
+header div {
+    font-size: 20px; /* уменьшено, чтобы не занимал полменю */
+    max-width: 35%; /* ограничиваем ширину блока с названием */
+    white-space: nowrap;
+}
+
+nav {
+    display: flex;
+    gap: 14px;
+    justify-content: flex-end;
+    flex: 1;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 19px;
+    white-space: nowrap;
+}
+    section {
+        padding: 120px 10%;
+    }
+    .hero {
+        height: 100vh;
+        background: url('https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') center/cover no-repeat;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: white;
+    }
+    .hero::after {
+        content: "";
+        position: absolute;
+        top: 0; left: 0;
+        width: 100%; height: 100%;
+        background: rgba(0,0,0,0.55);
+    }
+    .hero-content {
+        position: relative;
+        max-width: 900px;
+    }
+    .btn {
+        display: inline-block;
+        background: #ffffff;
+        color: #000;
+        padding: 15px 30px;
+        margin-top: 20px;
+        text-decoration: none;
+        font-weight: bold;
+        border-radius: 4px;
+        font-size: 22px;
+    }
+    .row {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+    }
+    .row img {
+        width: 45%;
+        border-radius: 10px;
+    }
+    .services-grid, .benefits-grid, .process-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px;
+    }
+    .service-box, .benefit-box, .process-box {
+        background: #f4f4f4;
+        padding: 30px;
+        border-radius: 10px;
+    }
+    .contact-block {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        gap: 40px;
+    }
+    .contact-block img {
+        width: 50%;
+        border-radius: 10px;
+    }
+    form input, form textarea {
+        width: 100%;
+        padding: 15px;
+        margin-bottom: 20px;
+        font-size: 20px;
+    }
+    form button {
+        background: black;
+        color: white;
+        padding: 15px 30px;
+        font-size: 22px;
+        border: none;
+        cursor: pointer;
+    }
+    footer {
+        background: #111;
+        color: #fff;
+        padding: 40px;
+        text-align: center;
+        font-size: 20px;
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <div><strong>JB CONSULTING AGENCY DOO</strong></div>
+    <nav>
+
+
+    </nav>
+</header>
+
+<!-- 1. HERO -->
+<section class="hero" id="hero">
+    <div class="hero-content">
+        <h1>JB CONSULTING AGENCY DOO</h1>
+        <p>
+            Pružamo napredna tehnička savetovanja, IT podršku i razvoj mobilnih aplikacija 
+            prilagođenih specifičnim potrebama vašeg poslovanja. Naš tim spaja iskustvo, analitiku 
+            i inovaciju kako bismo vam doneli rešenja koja povećavaju efikasnost i ubrzavaju rast.
+        </p>
+
+    </div>
+</section>
+
+<!-- 2. ABOUT -->
+<section id="about">
+    <h2>Ko smo mi — naš pristup i filozofija</h2>
+    <div class="row">
+        <div>
+            <p>
+                JB CONSULTING AGENCY DOO je tehnološko-konsultantska kompanija koja pomaže 
+                organizacijama da unaprede poslovne procese, automatizuju rad i obezbede stabilnu IT infrastrukturu. 
+                Naš tim kombinuje duboko tehničko znanje sa razumevanjem industrijskih izazova, 
+                kako bismo predložili rešenja koja zaista funkcionišu u praksi. Fokusirani smo na kvalitet, 
+                pouzdanost и dugoročnu saradnju sa partnerima. Svaki projekat posmatramо individualno 
+                i razvijamo strategije u skladu sa ciljevima kompanije.
+            </p>
+        </div>
+        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0" alt="Team work">
+    </div>
+</section>
+
+<!-- 3. SERVICES -->
+<section id="services">
+    <h2>Šta radimo — profesionalne usluge</h2>
+    <div class="services-grid">
+        <div class="service-box">
+            <h3>Tehničko Konsalting Savetovanje</h3>
+            <p>
+                Analiziramo vaše procese, identifikujemo slabosti i definišemo optimalna tehnička rešenja. 
+                Naš tim priprema strategije digitalne transformacije koje smanjuju troškove i povećavaju produktivnost. 
+                Fokus je na realnim rezultatima i merljivim poboljšanjima.
+            </p>
+        </div>
+        <div class="service-box">
+            <h3>IT Podrška i Administracija</h3>
+            <p>
+                Obezbeđujemo stabilnu i brzu tehničku podršku vašem radu — od održavanja sistema do optimizacije mreža. 
+                Radimo preventivno kako biste izbegli zastoje i prekide u poslovanju. 
+                Vaša infrastruktura uvek je bezbedna, funkcionalna i ažurna.
+            </p>
+        </div>
+        <div class="service-box">
+            <h3>Razvoj Mobilnih Aplikacija</h3>
+            <p>
+                Kreiramo moderne, pouzdane i intuitivne mobilne aplikacije za iOS i Android okruženja. 
+                Razvijamo rešenja od ideje do objave, uključujući dizajn, programiranje i testiranje. 
+                Naš cilj je kreiranje aplikacija koje donose vrednost korisnicima i jasno razlikuju vaš brend.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- 4. BENEFITS -->
+<section id="benefits">
+    <h2>Zašto izabrati baš nas — ključne prednosti</h2>
+    <div class="benefits-grid">
+        <div class="benefit-box">
+            <h3>Duboko tehničko znanje</h3>
+            <p>
+                Naš tim poseduje dugogodišnje iskustvo u radu sa kompleksnim sistemima i infrastrukturom, 
+                što nam omogućava da izgradimo rešenja koja garantuju stabilnost i bezbednost.
+            </p>
+        </div>
+        <div class="benefit-box">
+            <h3>Individualni pristup</h3>
+            <p>
+                Svaki projekat kreiramo od nule prema vašim ciljevima i izazovima.  
+                Vaše potrebe su osnova naše strategije — bez univerzalnih i generičkih rešenja.
+            </p>
+        </div>
+        <div class="benefit-box">
+            <h3>Brza i efikasna realizacija</h3>
+            <p>
+                Usmereni smo na pravovremenu isporuku, jasnu komunikaciju i transparentan rad. 
+                Projekti se realizuju organizovano, bez nepotrebnih odlaganja.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- 5. PROCESS -->
+<section id="process">
+    <h2>Kako radimo — naš proces saradnje</h2>
+    <div class="process-grid">
+        <div class="process-box">
+            <h3>1. Analiza i Dijagnostika</h3>
+            <p>
+                Razumemo vaše potrebe, identifikujemo izazove i prikupljamo informacije kako bismo definisali jasne ciljeve.
+            </p>
+        </div>
+        <div class="process-box">
+            <h3>2. Razvoj Strategije</h3>
+            <p>
+                Pripremamo tehnički plan i predloge rešenja koji su usklađeni sa vašim budžetom i dugoročnom vizijom.
+            </p>
+        </div>
+        <div class="process-box">
+            <h3>3. Implementacija i Podrška</h3>
+            <p>
+                Realizujemo projekat, optimizujemo sisteme i obezbeđujemo kontinuiranu podršku i unapređenja.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- 6. CONTACT BLOCK -->
+<section id="contact">
+    <h2>Kontaktirajte nas — stojimo vam na raspolaganju</h2>
+    <div class="contact-block">
+        <div>
+            <p>
+                Ako želite da unapredite vaše poslovanje, ubrzate digitalnu transformaciju ili razvijete stabilna IT rešenja — 
+                naš tim je spreman da vam pomogne. Kontaktirajte nas putem mejla i naš stručni tim će vam odgovoriti u najkraćem roku.
+            </p>
+            <p><strong>Email:</strong> team@jbconsulting.agency</p>
+            <p><strong>Adresa:</strong> Put Rogica 9A Velika Krsna, Grad Beograd 11000, PAK 222616</p>
+        </div>
+        <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0" alt="Contact">
+    </div>
+</section>
+
+<!-- 7. CONTACT FORM -->
+<section id="form">
+    <h2>Pošaljite nam poruku</h2>
+    <p>Popunite kratku formu i naš tim će vas kontaktirati u najkraćem roku.</p>
+    <form>
+        <input type="text" placeholder="Ime i prezime">
+        <input type="email" placeholder="Email adresa">
+        <textarea rows="4" placeholder="Vaša poruka"></textarea>
+        <button type="submit">Pošalji</button>
+    </form>
+</section>
+
+<!-- 8. FOOTER -->
+<footer>
+    JB CONSULTING AGENCY DOO © 2025 — Sva prava zadržana.
+</footer>
+
+</body>
+</html>
